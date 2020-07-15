@@ -1,0 +1,372 @@
+{
+  "contractName": "Document",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Code/healthBook/contracts/NotUse/Document.sol\":\"Document\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Code/healthBook/contracts/NotUse/Document.sol\":{\"keccak256\":\"0xc1c1e3f56915bd9346ad03224569953a2c7620251c187df96b83693105e08e1b\",\"urls\":[\"bzz-raw://673a4abb7866925af74097edfcc818282d3eb76332cd1b489ac7f8388e9f8ba8\",\"dweb:/ipfs/QmPySZeVsqbGgDU2sSoELHtQCZNESt77QPahgyCGr9D6aT\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158204973968e7514f5f347a460337c43d9d89c2761225574188922e82e7e1835696364736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158204973968e7514f5f347a460337c43d9d89c2761225574188922e82e7e1835696364736f6c63430005100032",
+  "sourceMap": "68:146:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;68:146:5;;;;;;;",
+  "deployedSourceMap": "68:146:5:-;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.5.0 <0.7.0;\r\n\r\ncontract Document{\r\n    uint documentId;\r\n    uint patientId;\r\n    uint practiceId;\r\n    string receivedDateTime;\r\n    string documentDateTime;\r\n}",
+  "sourcePath": "C:\\Code\\healthBook\\contracts\\NotUse\\Document.sol",
+  "ast": {
+    "absolutePath": "/C/Code/healthBook/contracts/NotUse/Document.sol",
+    "exportedSymbols": {
+      "Document": [
+        240
+      ]
+    },
+    "id": 241,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 229,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 240,
+        "linearizedBaseContracts": [
+          240
+        ],
+        "name": "Document",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 231,
+            "name": "documentId",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "92:15:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 230,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "92:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 233,
+            "name": "patientId",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "114:14:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 232,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "114:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 235,
+            "name": "practiceId",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "135:15:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 234,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "135:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 237,
+            "name": "receivedDateTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "157:23:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 236,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "157:6:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 239,
+            "name": "documentDateTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "187:23:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 238,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "187:6:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 241,
+        "src": "68:146:5"
+      }
+    ],
+    "src": "33:181:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Code/healthBook/contracts/NotUse/Document.sol",
+    "exportedSymbols": {
+      "Document": [
+        240
+      ]
+    },
+    "id": 241,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 229,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 240,
+        "linearizedBaseContracts": [
+          240
+        ],
+        "name": "Document",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 231,
+            "name": "documentId",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "92:15:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 230,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "92:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 233,
+            "name": "patientId",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "114:14:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 232,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "114:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 235,
+            "name": "practiceId",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "135:15:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 234,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "135:4:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 237,
+            "name": "receivedDateTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "157:23:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 236,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "157:6:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 239,
+            "name": "documentDateTime",
+            "nodeType": "VariableDeclaration",
+            "scope": 240,
+            "src": "187:23:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 238,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "187:6:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 241,
+        "src": "68:146:5"
+      }
+    ],
+    "src": "33:181:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-10T09:51:48.762Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

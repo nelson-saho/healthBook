@@ -1,0 +1,706 @@
+{
+  "contractName": "Immunization",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Code/healthBook/contracts/NotUse/Allergy.sol\":\"Immunization\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Code/healthBook/contracts/NotUse/Allergy.sol\":{\"keccak256\":\"0x8481264da660b0cca840b350ade692444089c213b2f83048fe86ada459d3971c\",\"urls\":[\"bzz-raw://1e793306a2ea36dcf3713be124828a5b9e666e159f4b437ef946bed0d76e6f0a\",\"dweb:/ipfs/QmbHt1Zm59ntZRbsw3KmcaFX2VQT94wEfdxKv4SNUGhqB3\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158209ae162f99aa2f01c91addd8a43770c166d802331e2fc5378510f179b30d20ea764736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158209ae162f99aa2f01c91addd8a43770c166d802331e2fc5378510f179b30d20ea764736f6c63430005100032",
+  "sourceMap": "68:424:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;68:424:4;;;;;;;",
+  "deployedSourceMap": "68:424:4:-;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.5.0 <0.7.0;\r\n\r\ncontract Immunization {\r\n    struct ImmunizationInfo {\r\n        uint documentId;\r\n        uint providerId;\r\n        string immunizationCode;\r\n        string normalizedCodeSystemName;\r\n        string immunizationName;\r\n        string NormalisedImmunizationDate;\r\n        string administrationStatus;\r\n        uint dosage; //float\r\n        string dosageUnit;\r\n        string routeCode;\r\n        string routeName;\r\n\r\n    }\r\n\r\n}",
+  "sourcePath": "C:\\Code\\healthBook\\contracts\\NotUse\\Allergy.sol",
+  "ast": {
+    "absolutePath": "/C/Code/healthBook/contracts/NotUse/Allergy.sol",
+    "exportedSymbols": {
+      "Immunization": [
+        227
+      ]
+    },
+    "id": 228,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 203,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 227,
+        "linearizedBaseContracts": [
+          227
+        ],
+        "name": "Immunization",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Immunization.ImmunizationInfo",
+            "id": 226,
+            "members": [
+              {
+                "constant": false,
+                "id": 205,
+                "name": "documentId",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "132:15:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 204,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "132:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 207,
+                "name": "providerId",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "158:15:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 206,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "158:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 209,
+                "name": "immunizationCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "184:23:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 208,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "184:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 211,
+                "name": "normalizedCodeSystemName",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "218:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 210,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "218:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 213,
+                "name": "immunizationName",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "260:23:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 212,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "260:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 215,
+                "name": "NormalisedImmunizationDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "294:33:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 214,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "294:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 217,
+                "name": "administrationStatus",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "338:27:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 216,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "338:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 219,
+                "name": "dosage",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "376:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 218,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "376:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 221,
+                "name": "dosageUnit",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "406:17:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 220,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 223,
+                "name": "routeCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "434:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 222,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "434:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 225,
+                "name": "routeName",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "461:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 224,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "461:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ImmunizationInfo",
+            "nodeType": "StructDefinition",
+            "scope": 227,
+            "src": "97:390:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 228,
+        "src": "68:424:4"
+      }
+    ],
+    "src": "33:459:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Code/healthBook/contracts/NotUse/Allergy.sol",
+    "exportedSymbols": {
+      "Immunization": [
+        227
+      ]
+    },
+    "id": 228,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 203,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:31:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 227,
+        "linearizedBaseContracts": [
+          227
+        ],
+        "name": "Immunization",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Immunization.ImmunizationInfo",
+            "id": 226,
+            "members": [
+              {
+                "constant": false,
+                "id": 205,
+                "name": "documentId",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "132:15:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 204,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "132:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 207,
+                "name": "providerId",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "158:15:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 206,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "158:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 209,
+                "name": "immunizationCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "184:23:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 208,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "184:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 211,
+                "name": "normalizedCodeSystemName",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "218:31:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 210,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "218:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 213,
+                "name": "immunizationName",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "260:23:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 212,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "260:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 215,
+                "name": "NormalisedImmunizationDate",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "294:33:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 214,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "294:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 217,
+                "name": "administrationStatus",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "338:27:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 216,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "338:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 219,
+                "name": "dosage",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "376:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 218,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "376:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 221,
+                "name": "dosageUnit",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "406:17:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 220,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 223,
+                "name": "routeCode",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "434:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 222,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "434:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 225,
+                "name": "routeName",
+                "nodeType": "VariableDeclaration",
+                "scope": 226,
+                "src": "461:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 224,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "461:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ImmunizationInfo",
+            "nodeType": "StructDefinition",
+            "scope": 227,
+            "src": "97:390:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 228,
+        "src": "68:424:4"
+      }
+    ],
+    "src": "33:459:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.1",
+  "updatedAt": "2020-07-10T09:51:48.761Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
