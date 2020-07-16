@@ -6,7 +6,7 @@ chai.use(chaiAsPromised);
 expect = chai.expect;
 
 contract("Test the Patient contract", function(accounts) {
-    let [nelson, josias, malory] = accounts;
+    let [salim, esperance, malory] = accounts;
     // Deploy the contract
     describe("Deploy the Patient smart contract", function() {
         it("Catch an instance of the Patient contract", function() {
@@ -16,14 +16,14 @@ contract("Test the Patient contract", function(accounts) {
         });
     });
     //Add Doctors
-    describe("Add doctors Nelson and Josias", function() {
-        it("Call the function addDoctor to add Nelson", function() {
-            return patientContract.addDoctor("Nelson", "Saho", "CNHU", nelson).then(function(res) {
+    describe("Add doctors", function() {
+        it("Add doctor Salim", function() {
+            return patientContract.addDoctor("Salim", "Diatema", "CNHU", salim).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });   
-        it("Call the function addDoctor to add Josias", function() {
-            return patientContract.addDoctor("Josias", "Gbetoho", "CNHU", josias).then(function(res) {
+        it("Add doctor Espérance", function() {
+            return patientContract.addDoctor("Espérance", "Assani", "Homel", esperance).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
@@ -31,17 +31,17 @@ contract("Test the Patient contract", function(accounts) {
     // Add patients
     describe("Check Patient function adding", function() {
         it("Call the function addPatient for Fabrice", function() {
-            return patientContract.addPatient("Fabrice", "Adjaffon", "F", "Togbin", {"from": nelson}).then(function(res) {
+            return patientContract.addPatient("Fabrice", "Adjaffon", "F", "Togbin", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Call the function addPatient for Odette", function() {
-            return patientContract.addPatient("Odette", "Adjaffon", "F", "Togbin", {"from": nelson}).then(function(res) {
+            return patientContract.addPatient("Odette", "Adjaffon", "F", "Togbin", {"from": esperance}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Call the function addPatient for Bertho", function() {
-            return patientContract.addPatient("Bertho", "Ganta", "M", "Agla", {"from": josias}).then(function(res) {
+            return patientContract.addPatient("Bertho", "Ganta", "M", "Agla", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
@@ -49,22 +49,22 @@ contract("Test the Patient contract", function(accounts) {
 
     describe("Test examination of Patient", function() {
         it("Order an examination to Fabrice", function() {
-            return patientContract.orderAnExamination(0, 10, "CV-19", "Corona virus", "2020-06-12", {"from": josias}).then(function(res) {
+            return patientContract.orderAnExamination(0, 10, "CV-19", "Corona virus", "2020-06-12", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Order an examination to Fabrice", function() {
-            return patientContract.orderAnExamination(0, 11, "RD", "Left leg x-ray", "2020-06-12", {"from": josias}).then(function(res) {
+            return patientContract.orderAnExamination(0, 11, "RD", "Left leg x-ray", "2020-06-12", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Order an examination to Odette", function() {
-            return patientContract.orderAnExamination(1, 12, "CV-19", "Corona virus", "2020-06-12", {"from": josias}).then(function(res) {
+            return patientContract.orderAnExamination(1, 12, "CV-19", "Corona virus", "2020-06-12", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Order an examination to Bertho", function() {
-            return patientContract.orderAnExamination(2, 13, "CV-19", "Corona virus", "2020-06-12", {"from": josias}).then(function(res) {
+            return patientContract.orderAnExamination(2, 13, "CV-19", "Corona virus", "2020-06-12", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
@@ -86,27 +86,27 @@ contract("Test the Patient contract", function(accounts) {
         });
 
         it("Record examination result", function() {
-            return patientContract.addResultOfOrderExamination(1, 10, "N4", "Negative result", "2020-06-30", {"from": josias}).then(function(res) {
+            return patientContract.addResultOfOrderExamination(1, 10, "N4", "Negative result", "2020-06-30", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Record examination result", function() {
-            return patientContract.addResultOfOrderExamination(2, 11, "P4", "slight fracture. Immobilize the leg for two weeks", "2020-06-30", {"from": josias}).then(function(res) {
+            return patientContract.addResultOfOrderExamination(2, 11, "P4", "slight fracture. Immobilize the leg for two weeks", "2020-06-30", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Record examination result", function() {
-            return patientContract.addResultOfOrderExamination(3, 12, "N4", "Negative result", "2020-06-30", {"from": josias}).then(function(res) {
+            return patientContract.addResultOfOrderExamination(3, 12, "N4", "Negative result", "2020-06-30", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Record examination result", function() {
-            return patientContract.addResultOfOrderExamination(4, 13, "N4", "Negative result", "2020-06-30", {"from": josias}).then(function(res) {
+            return patientContract.addResultOfOrderExamination(4, 13, "N4", "Negative result", "2020-06-30", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Add result detail", function() {
-            return patientContract.addResultDetailExamination(2, "Radio waves", "Senyon Laboratory", "fracture depth 5 mm", "N/A", {"from": josias}).then(function(res) {
+            return patientContract.addResultDetailExamination(2, "Radio waves", "Senyon Laboratory", "fracture depth 5 mm", "N/A", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });

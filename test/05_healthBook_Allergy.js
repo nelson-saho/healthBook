@@ -9,7 +9,7 @@ chai.use(chaiAsPromised);
 expect = chai.expect;
 
 contract("Test the Patient contract", function(accounts) {
-    let [nelson, josias, malory] = accounts;
+    let [salim, esperance, malory] = accounts;
     // Deploy the contract
     describe("Deploy the Patient smart contract", function() {
         it("Catch an instance of the Patient contract", function() {
@@ -19,14 +19,14 @@ contract("Test the Patient contract", function(accounts) {
         });
     });
     //Add Doctors
-    describe("Add doctors Nelson and Josias", function() {
-        it("Call the function addDoctor to add Nelson", function() {
-            return patientContract.addDoctor("Nelson", "Saho", "CNHU", nelson).then(function(res) {
+    describe("Add doctors", function() {
+        it("Add doctor Salim", function() {
+            return patientContract.addDoctor("Salim", "Diatema", "CNHU", salim).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });   
-        it("Call the function addDoctor to add Josias", function() {
-            return patientContract.addDoctor("Josias", "Gbetoho", "CNHU", josias).then(function(res) {
+        it("Add doctor Espérance", function() {
+            return patientContract.addDoctor("Espérance", "Assani", "Homel", esperance).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
@@ -34,17 +34,17 @@ contract("Test the Patient contract", function(accounts) {
     // Add patients
     describe("Check Patient function adding", function() {
         it("Call the function addPatient for Fabrice", function() {
-            return patientContract.addPatient("Fabrice", "Adjaffon", "F", "Togbin", {"from": nelson}).then(function(res) {
+            return patientContract.addPatient("Fabrice", "Adjaffon", "F", "Togbin", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Call the function addPatient for Odette", function() {
-            return patientContract.addPatient("Odette", "Adjaffon", "F", "Togbin", {"from": nelson}).then(function(res) {
+            return patientContract.addPatient("Odette", "Adjaffon", "F", "Togbin", {"from": esperance}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Call the function addPatient for Bertho", function() {
-            return patientContract.addPatient("Bertho", "Ganta", "M", "Agla", {"from": josias}).then(function(res) {
+            return patientContract.addPatient("Bertho", "Ganta", "M", "Agla", {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
@@ -52,17 +52,17 @@ contract("Test the Patient contract", function(accounts) {
 
     describe("Try to add an allergy of patients", function() {
         it("Add an allergy of Odette", function() {
-            return patientContract.addAllergy(2, "Body allergy", "burns on the skin black spot", 1, {"from": nelson}).then(function(res) {
+            return patientContract.addAllergy(2, "Body allergy", "burns on the skin black spot", 1, {"from": salim}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Add an allergy of Odette", function() {
-            return patientContract.addAllergy(3, "Body allergy", "the skin itches", 1, {"from": josias}).then(function(res) {
+            return patientContract.addAllergy(3, "Body allergy", "the skin itches", 1, {"from": esperance}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
         it("Add an allergy of Bertho", function() {
-            return patientContract.addAllergy(2, "Body allergy", "burns on the skin (stomach)", 2, {"from": josias}).then(function(res) {
+            return patientContract.addAllergy(2, "Body allergy", "burns on the skin (stomach)", 2, {"from": esperance}).then(function(res) {
                 expect(res).to.not.be.an("error");
             });
         });
